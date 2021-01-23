@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <link rel="stylesheet" type="text/css" href="JunaidStyle.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   </head>
+   <style>
+       h1{
+           font-size: 7vh;
+       }
+       p{
+           font-size: 3vh;
+       }
+   </style>
+    <body>
+        <h1>AIR BALLOON RIDE</h1>
+        <iframe src="index2.html" scrolling ='no' framebroder="0" allowtransparency="true" width="500" height="500"></iframe><div id="iframeHolder"></div>
+        <p>Take your cuser to game window and click. For activate the game.</p>
+        <p>Press up arrow to go up,Press down arrow to go down,Press left arrow to go left and Press right arrow to go right.</p>
+        <p>Duplicate this tab and see results here setps:<br></br><li>1.click this link to open in new tab.<a href="#" target="blank">!!OPEN IN NEW TAB!!</a></li>(OR)<li><button id="button" >Open here</button></li></p>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $('#button').click(function(){ 
+                if(!$('#iframe').length) {
+                        $('#iframeHolder').html('<iframe id="iframe" src="index2.html" scrolling ="no" framebroder="0" allowtransparency="true" width="500" height="500"></iframe>');
+                }
+            });   
+        });
+        </script>
+         
+    </body>
+</html>
